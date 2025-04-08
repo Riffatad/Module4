@@ -18,4 +18,11 @@ SELECT *
 FROM iris_data
 LIMIT 15;
 
+-- the average 'petal_width' by species
+SELECT species, AVG(petal_width) AS avg_petal_width
+FROM iris_data
+GROUP BY species;
 
+-- Correlation between 'sepal_length' and 'petal_length'
+SELECT CORR(sepal_length, petal_length) AS correlation
+FROM iris_data;
