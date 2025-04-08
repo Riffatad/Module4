@@ -10,3 +10,12 @@ petal_width REAL NOT NULL,
 species VARCHAR NOT NULL,
 );
 
+-- displaying table data
+SELECT * FROM iris_data
+
+-- Retrieve the first 15 rows
+SELECT *
+FROM iris_data
+LIMIT 15;
+
+
